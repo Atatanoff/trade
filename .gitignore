@@ -1,0 +1,6 @@
+.env 
+.venv
+TZ
+test.py
+*.txt
+!requirements.txt
