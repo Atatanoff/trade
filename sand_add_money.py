@@ -8,7 +8,7 @@ env.read_env()
 TOKEN = env('TOKEN_SAND')
 
 with Client(TOKEN, target=INVEST_GRPC_API_SANDBOX) as client:
-    #sb = client.sandbox
+    # sb = client.sandbox
     id_ac = client.users.get_accounts().accounts[0].id
     client.sandbox.sandbox_pay_in(
         account_id=id_ac,

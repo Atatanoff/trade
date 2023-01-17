@@ -1,16 +1,17 @@
 
 from tinkoff.invest import Client
 from tinkoff.invest.constants import INVEST_GRPC_API_SANDBO
-from environs import Env
-
-env = Env()
-env.read_env()
-
-TOKEN = env('TOKEN_SAND')
+from config.config import TOKEN
+from project.project import get_status_share, log
 
 
-def main():
-    pass
+
+def run():
+    while True:
+        try:
+            get_status_share()
+        except Exception: log(Exception)
 
 if __name__=='__main__':
-    main()
+    run()
+
