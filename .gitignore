@@ -5,4 +5,4 @@ test.py
 *.txt
 !requirements.txt
 .idea/
-config/.evn
+config/.env
