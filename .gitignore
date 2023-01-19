@@ -6,3 +6,4 @@ test.py
 !requirements.txt
 .idea/
 config/.env
+__py*
