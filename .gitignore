@@ -7,3 +7,4 @@ test.py
 .idea/
 config/.env
 __py*
+*log*
